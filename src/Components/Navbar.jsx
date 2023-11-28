@@ -1,6 +1,6 @@
 
 
-const Navbar = () => {
+const Navbar = ({setCategory}) => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
   <div className="container-fluid">
@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <div className="nav-link">Technology</div>
+          <div className="nav-link" onClick={()=>setCategory}>Technology</div>
         </li>
         <li className="nav-item">
           <div className="nav-link">Business</div>
